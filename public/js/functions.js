@@ -30,6 +30,7 @@
                    'fontSize': 24,
                    'color': '#FFF',
                    'pieSliceText': 'label',
+                   'colors': ["#0466C8", "#0353A4", "#023E7D", "#002855", "#001845", "#001233", "#33415C", "#5C677D"],
                    'legend': { position: 'none'}
                  };
  
@@ -51,6 +52,7 @@
                   'chartArea':{left:20,top:0,width:'100%',height:'100%'},
                   'fontSize': 24,
                   'color': '#FFF',
+                  'colors': ["#0466C8", "#0353A4", "#023E7D", "#002855", "#001845", "#001233", "#33415C", "#5C677D"],
                   'pieSliceText': 'label',
                   'legend': { position: 'none'}
                 };
@@ -92,11 +94,11 @@ function prepareData(j){
     } 
     
     if(values["felicidad"]+values["sorpresa"] > 0.7)
-        $("#msgres").text("¡Felicidades, tu regalo causo un excelente recibimiento!");
+        $("#msgres").text("¡Felicidades, tu regalo causó un excelente recibimiento!");
     else if(values["felicidad"]+values["sorpresa"] <= 0.7 && values["felicidad"]+values["sorpresa"] >= 0.5)
-        $("#msgres").text("Tu regalo no fue bien recibido");
+        $("#msgres").text("Ups, tu regalo no fue muy bien recibido");
     else
-        $("#msgres").text("Lo lamentamos, tu regalo no causo el impacto esperado");
+        $("#msgres").text("Lo sentimos, tu regalo no causó el impacto esperado. ¡Mejor consigue otro!");
     data.addRows(table);
     return data;
 }
