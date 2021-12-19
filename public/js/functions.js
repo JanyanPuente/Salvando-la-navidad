@@ -22,12 +22,12 @@
 
     // Set chart options
     var options = {'title':'Sentimientos',
-                   'width':300,
-                   'height':300,
+                   'width':470,
+                   'height':470,
                    'pieHole': 0.4,
                    'backgroundColor': 'transparent',
                    'chartArea':{left:20,top:0,width:'100%',height:'100%'},
-                   'fontSize': '24px',
+                   'fontSize': 24,
                    'color': '#FFF',
                    'pieSliceText': 'label',
                    'legend': { position: 'none'}
@@ -44,12 +44,12 @@
  function drawChart(data) {
    // Set chart options
    var options = {'title':'Sentimientos',
-                  'width':300,
-                  'height':300,
+                  'width':470,
+                  'height':470,
                   'pieHole': 0.4,
                   'backgroundColor': 'transparent',
                   'chartArea':{left:20,top:0,width:'100%',height:'100%'},
-                  'fontSize': '24px',
+                  'fontSize': 24,
                   'color': '#FFF',
                   'pieSliceText': 'label',
                   'legend': { position: 'none'}
