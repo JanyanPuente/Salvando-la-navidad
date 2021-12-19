@@ -110,7 +110,14 @@ $(document).ready(function() {
     $("#subBtn").click(function(){
         var fd = new FormData();
         var files = $('#myFile')[0].files;
-
+        $("#chart_div").children().remove();
+        $("#chart_div").css({"background-image": "url('img/cargando.gif')",
+                            "width": "470px",
+                            "height": "470px",
+                            "background-position": "center",
+                            "background-size": "100%",
+                            "background-repeat": "no-repeat",
+                            "border-radius": "5px"});
         if( files.length > 0)
         {
             fd.append("filename", files[0]);
@@ -123,6 +130,7 @@ $(document).ready(function() {
                 processData: false,
                 dataType: 'text json',
                 success: function(response){
+                    $("#chart_div").css({"background-image": "none", "width": "auto", "height": "auto"});
                     data = prepareData(response);
                     drawChart(data);
                 },
@@ -140,8 +148,15 @@ $(document).ready(function() {
         fr.onload = function () {
             document.getElementById("imgProcess").src = fr.result;
         }
-        f = $(this).get(0).files[0];
-        fr.readAsDataURL(f);
+        files = $(this).get(0).files;
+        if(files.length > 0){
+            $("#subBtn").removeAttr("disabled", "disabled");
+            f = files[0];
+            fr.readAsDataURL(f);
+        }
+        else{
+            $("#subBtn").attr("disabled", "disabled");
+        }
     });
     
 });
