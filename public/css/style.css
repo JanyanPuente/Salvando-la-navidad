@@ -1427,26 +1427,25 @@ width: 99%;
 
 .inputs{
     margin: 2%;
-    width:100%
-    
+    width:100%;
+    background: #6a93b2;
+    color:#fff;
+    font-family: 'Open Sans';
+    padding: 2%;
+    border-radius: 20px;
+    text-decoration:none;
+    font-size: 14px;
+    border-color: #87acc5;
+}
+.inputs:hover{
+    background:#2f4653;
 }
 
-.inputContainer1{
+.inputContainer{
     position:relative;
     display: inline-block;
     width: 40%;
     height: fit-content;
     margin: 2%;
-    background: #63aa63;
-    padding: 2%;
-}
-
-.inputContainer2{
-    position:relative;
-    display: inline-block;
-    width: 40%;
-    margin:2%;
-    background: #c76e08;
-    height: fit-content;
     padding: 2%;
 }
