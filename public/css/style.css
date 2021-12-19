@@ -8,6 +8,10 @@ Licence under Creative Commons Attribution 3.0
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
+@font-face {
+    font-family: 'HK Modular';
+    src: url('../fonts/Adventure Subtitles.ttf');
+  }
 /* Reset
 ---------------------------------*/
 ul {
@@ -63,7 +67,7 @@ body {
 h2 {
     font-size: 38px;
     color: #222222;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'HK Modular';
     font-weight: normal;
     margin: 0px 0 25px 0;
     text-align: center;
@@ -158,7 +162,7 @@ p {
     display: block;
     font-size: 14px;
     color: #222222;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'HK Modular';
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -250,7 +254,7 @@ p {
     color: #ffffff;
     line-height: 52px;
     margin: 0 0 26px 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'HK Modular';
     text-align: center;
 }
 
@@ -793,7 +797,7 @@ img {
 
 .section-title h2 {
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'HK Modular';
     font-size: 34px;
     letter-spacing: -1px;
     margin: 0 0 15px;
