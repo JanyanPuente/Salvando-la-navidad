@@ -4,7 +4,7 @@
 La solución consiste en una webapp, cuyo protagonista es Azure Cognitive Services. En la cual, el usuario es capaz de subir una fotografía y así, posteriormente por medio de Face API, se lleve a cabo un análisis e identificiación de las emociones mostradas por las personas presentes. 
 
 ## Tik Tok
-
+https://www.tiktok.com/@trinidadrz/video/7043605516441963781?lang=es&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=7012186296718689798
 
 ## Arquitectura de la solución
 ![Estructura de Salvando la Navidad](https://github.com/JanyanPuente/Salvando-la-navidad/blob/main/Pagina%20web/public/img/Estructura.png)
